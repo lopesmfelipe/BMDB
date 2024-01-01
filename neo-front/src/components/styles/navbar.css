@@ -14,7 +14,7 @@
 
 .navbar:hover {
   width: 160px;
-  justify-content: 250ms;
+  transition: 250ms;
 }
 
 .navbar:hover .icon-container {
