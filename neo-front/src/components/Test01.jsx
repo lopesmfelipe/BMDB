@@ -32,40 +32,25 @@ const mangaImages = [
   SunkenRockCover
 ];
 
-const mangaTitles = [
-  "Kagurabachi", 
-  "Sakamoto Days",
-  "One Punch Man",
-  "Another",
-  "Berserk",
-  "Tokyo Ghoul",
-  "Akira",
-  "Homunculus",
-  "Blue Lock",
-  "Solo Leveling",
-  "Tokyo Revengers",
-  "Sunken Rock"
-];
-
-const MangaGrid = () => {
+const Test01 = () => {
   return (
-      <main>
-        <section>
-          <div className="mangas-grid">
-            {mangaImages.map((cover, index) => (
-              <div className="manga-area">
-                <div className="cover-container">
-                  <img className="manga-cover" src={cover} alt={`Manga ${index} + 1`} />
-                </div>
-                <div className="manga-title-container">
-                  <p>{mangaTitles[index]}</p>
-                </div>
+    <main>
+      <section>
+        <div className="mangas-grid">
+          {mangaImages.map((cover, index) => (
+            <div className="manga-area" key={index}>
+              <div className="cover-container">
+                <img className="manga-cover" src={cover} alt={`Manga ${index} + 1`} />
               </div>
-            ))}
-          </div> 
-        </section>
-      </main>
+              <div className="manga-title-container">
+                <p>One-Punch Man</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    </main>
   );
 };
 
-export default MangaGrid;
+export default Test01;
