@@ -17,48 +17,34 @@ import SunkenRockCover from "../assets/images/Sunken-Rock.jpg"
 
 
 
-const mangaImages = [
-  KagurabachiCover, 
-  SakamotoDaysCover,
-  OnePunchManCover,
-  AnotherCover,
-  BerserkCover,
-  TokyoGhoulCover,
-  AkiraCover,
-  HomunculusCover,
-  BlueLockCover,
-  SoloLevelingCover,
-  TokyoRevengersCover,
-  SunkenRockCover
+const mangaData = [
+  {title: "Kagurabachi", cover: KagurabachiCover}, 
+  {title: "Sakamoto Days", cover: SakamotoDaysCover},
+  {title: "One-Punch Man", cover:  OnePunchManCover},
+  {title: "Another", cover: AnotherCover},
+  {title: "Berserk", cover:BerserkCover},
+  {title: "Tokyo Ghoul", cover:TokyoGhoulCover},
+  {title: "Akira", cover:AkiraCover},
+  {title: "Homunculus", cover:HomunculusCover},
+  {title: "Blue Lock", cover:BlueLockCover},
+  {title: "Solo Leveling", cover:SoloLevelingCover},
+  {title: "Tokyo Revengers", cover:TokyoRevengersCover},
+  {title: "Sunken Rock", cover:SunkenRockCover}
 ];
 
-const mangaTitles = [
-  "Kagurabachi", 
-  "Sakamoto Days",
-  "One Punch Man",
-  "Another",
-  "Berserk",
-  "Tokyo Ghoul",
-  "Akira",
-  "Homunculus",
-  "Blue Lock",
-  "Solo Leveling",
-  "Tokyo Revengers",
-  "Sunken Rock"
-];
 
 const MangaGrid = () => {
   return (
       <main>
         <section>
           <div className="mangas-grid">
-            {mangaImages.map((cover, index) => (
+            {mangaData.map((manga, index) => (
               <div className="manga-area">
                 <div className="cover-container">
-                  <img className="manga-cover" src={cover} alt={`Manga ${index} + 1`} />
+                  <img className="manga-cover" src={manga.cover} alt={`Manga ${index} + 1`} />
                 </div>
                 <div className="manga-title-container">
-                  <p>{mangaTitles[index]}</p>
+                  <p>{manga.title}</p>
                 </div>
               </div>
             ))}
