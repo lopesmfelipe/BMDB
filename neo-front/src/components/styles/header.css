@@ -1,4 +1,4 @@
-.title-div {
+.titleHead {
     display: flex;
     flex-direction: row;
     height: 300px;
@@ -7,7 +7,7 @@
     background-color: rgba(23, 23, 23, 0);
   }
 
-.title-header p {
+.title-container p {
   font-family: 'Wallpoet', sans-serif;
   font-size: 100px;
   color: rgb(255, 255, 255);
