@@ -10,9 +10,14 @@
 .title-container p {
   font-family: 'Wallpoet', sans-serif;
   font-size: 140px;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 249, 249);
   padding-top: 0px;
   cursor: default;
+}
+
+.title-container p:hover {
+  color: var(--main-color);
+  transition: 240ms;
 }
 
 .title-container {
@@ -34,23 +39,43 @@
   top: 0;
   right: 10px;
   left: 10px;
-}
-
-
-/*  background-color: rgba(28, 27, 27, 0.887);
-*/
-
-
-.bar-header p {
+  font-family: 'Wallpoet', sans-serif;
   color: var(--main-color);
+  font-size: 20px;
 }
 
-.bar-header-container {
-  width: 96%;
+
+
+.barheader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 95%;
   border-bottom-width: 2px;
   border-bottom-style: solid;
-  border-color: var(--main-color)
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-color: var(--main-color);
+
 }
+
+.moveLine {
+  display: box;
+  white-space: nowrap;
+  animation: RightToLeftAnimation 5s  infinite  linear;
+  overflow: hidden;
+}
+
+@keyframes RightToLeftAnimation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 
 .bar-header-container p {
   margin-left: 15px;

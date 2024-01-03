@@ -12,8 +12,10 @@ const Header = () => {
       </header>
 
       <div className="bar-header">
-        <div className="bar-header-container">
-          <p>Library</p>
+        <div className="barheader-container">
+          <div className="moveLine">
+            <p>LIBRARY LIBRARY LIBRARY LIBRARY LIBRARY LIBRARY LIBRARY LIBRARY LIBRARY LIBRARY LIBRARY LIBRARY LIBRARY LIBRARY LIBRARY</p>
+          </div>
         </div>
       </div>
     </>
