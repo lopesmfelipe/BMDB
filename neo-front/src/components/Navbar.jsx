@@ -1,15 +1,18 @@
 import React from "react";
-import "./styles/general.css"
+import { Link } from "react-router-dom";
+import "./styles/general.css";
 import "./styles/navbar.css";
 
 const Navbar = () => {
   return (
     <>
       <nav className="navbar">
-        <div className="icon-container">
-          <span className="material-symbols-outlined">library_books</span>
-          <div className="icon-name">Library</div>
-        </div>
+        <Link to="/">
+          <div className="icon-container">
+            <span className="material-symbols-outlined">library_books</span>
+            <div className="icon-name">Library</div>
+          </div>
+        </Link>
 
         <div className="icon-container">
           <span className="material-symbols-outlined">explore</span>
@@ -23,12 +26,14 @@ const Navbar = () => {
           <div className="icon-name">Popular</div>
         </div>
 
-        <div className="icon-container">
-          <span className="material-symbols-outlined">
-            circle_notifications
-          </span>
-          <div className="icon-name">Updates</div>
-        </div>
+        <Link to="/updates">
+          <div className="icon-container">
+            <span className="material-symbols-outlined">
+              circle_notifications
+            </span>
+            <div className="icon-name">Updates</div>
+          </div>
+        </Link>
 
         <div className="icon-container">
           <span className="material-symbols-outlined">settings</span>
