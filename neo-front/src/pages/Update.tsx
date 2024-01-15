@@ -1,3 +1,4 @@
+import React from "react";
 import "./pagesStyle/update.css"
 
 const Update = () => {
