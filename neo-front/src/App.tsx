@@ -7,6 +7,7 @@ import Explore from "./pages/Explore";
 import Popular from "./pages/Popular";
 import Settings from "./pages/Settings";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Manga from "./pages/Manga";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/explore" element={<Explore />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/settings" element={<Popular />} />
+          <Route path="/manga" element={<Manga />} />
         </Routes>
       </Router>
     </div>
