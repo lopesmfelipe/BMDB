@@ -1,5 +1,6 @@
 import "./styles/general.css";
 import "./styles/mangaGrid.css";
+import { Link } from "react-router-dom";
 
 import KagurabachiCover from "../assets/images/kagurabachi.jpg";
 import SakamotoDaysCover from "../assets/images/Sakamoto-Days.jpg";
@@ -32,25 +33,25 @@ const mangaData = [
 const MangaGrid = () => {
   return (
     <>
-      <div className="list-title">
-        Popupar
-      </div>
+      <div className="list-title">Popupar</div>
       <main>
         <section>
           <div className="mangas-grid">
             {mangaData.map((manga, index) => (
-              <div className="manga-area">
-                <div className="cover-container">
-                  <img
-                    className="manga-cover"
-                    src={manga.cover}
-                    alt={`Manga ${index} + 1`}
-                  />
+              <Link to="/manga" style={{ textDecoration: "none"}}>
+                <div className="manga-area">
+                  <div className="cover-container">
+                    <img
+                      className="manga-cover"
+                      src={manga.cover}
+                      alt={`Manga ${index} + 1`}
+                    />
+                  </div>
+                  <div className="manga-title-container">
+                    <p>{manga.title}</p>
+                  </div>
                 </div>
-                <div className="manga-title-container">
-                  <p>{manga.title}</p>
-                </div>
-              </div>
+              </Link>
             ))}
           </div>
         </section>

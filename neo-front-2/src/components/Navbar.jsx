@@ -15,7 +15,7 @@ const Navbar = () => {
 
       <Link to="/explore" style={{ textDecoration: "none", color: "inherit"}}>
         <div className="icon-container">
-          <span className="material-symbols-outlined">explore</span>
+          <span className="material-symbols-outlined">search</span>
           <div className="icon-name">Search</div>
         </div>
       </Link>
