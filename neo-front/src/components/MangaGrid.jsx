@@ -1,8 +1,7 @@
-import React from "react";
 import "./styles/general.css"
 import "./styles/mangaGrid.css";
 
-import KagurabachiCover from "../assets/images/Kagurabachi.jpg"
+import KagurabachiCover from "../assets/images/kagurabachi.jpg"
 import SakamotoDaysCover from "../assets/images/Sakamoto-Days.jpg"
 import OnePunchManCover from "../assets/images/Onepunch-Man.jpg"
 import AnotherCover from "../assets/images/Another.jpg"
