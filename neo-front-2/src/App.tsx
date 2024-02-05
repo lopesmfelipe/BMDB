@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import MangaGrid from "./components/MangaGrid";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Manga from "./pages/Manga";
+import Manga from "./pages/MangaPage";
 
 function App() {
   return (

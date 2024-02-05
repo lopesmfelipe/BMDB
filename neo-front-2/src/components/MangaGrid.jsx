@@ -1,5 +1,5 @@
-import "./styles/general.css";
-import "./styles/mangaGrid.css";
+import "../styles/general.css";
+import "../styles/mangaGrid.css";
 import { Link } from "react-router-dom";
 
 import KagurabachiCover from "../assets/images/kagurabachi.jpg";

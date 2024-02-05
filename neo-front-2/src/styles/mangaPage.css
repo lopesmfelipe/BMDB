@@ -2,9 +2,6 @@ body {
   height: 1000px;
 }
 
-h1 {
-}
-
 h3 {
  margin: 10px; 
 }
@@ -32,16 +29,22 @@ h3 {
 }
 
 .chapters-container {
-  color: white;
+  color: var(--main-color);
   width: 80%;
-  padding-top: 20px;
+  margin-top: 80px;
   padding-left: 60px;
 }
 
 .chap {
-  border: solid 0.2px;
   margin-bottom: 0.1px;
   font-size: 16px;
+  margin-bottom: 10px;
+  border: solid;
+  border-radius: 3px;
+}
+
+.chap:hover {
+  color: rgb(213, 213, 213);
 }
 
 
