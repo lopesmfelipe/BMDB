@@ -4,23 +4,21 @@ import "./styles/navbar.css";
 
 const Navbar = () => {
   return (
-    <>
-      <nav className="navbar">
-        <Link to="/" style={{ textDecoration: "none", color: "inherit"}}>
-          <div className="icon-container">
-            <span className="material-symbols-outlined">library_books</span>
-            <div className="icon-name">Home</div>
-          </div>
-        </Link>
+    <nav className="navbar">
+      <Icon iconObj={{ name: "Home", symbolName: "library_books" }} />
+      <Icon iconObj={{ name: "Search", symbolName: "search" }} />
+    </nav>
+  );
+};
 
-      <Link to="/explore" style={{ textDecoration: "none", color: "inherit"}}>
-        <div className="icon-container">
-          <span className="material-symbols-outlined">search</span>
-          <div className="icon-name">Search</div>
-        </div>
-      </Link>
-      </nav>
-    </>
+const Icon = ({ iconObj }) => {
+  return (
+    <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+      <div className="icon-container">
+        <span className="material-symbols-outlined">{iconObj.symbolName}</span>
+        <div className="icon-name">{iconObj.name}</div>
+      </div>
+    </Link>
   );
 };
 

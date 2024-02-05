@@ -19,6 +19,9 @@
 
 .navbar:hover .icon-container {
   flex-direction: row;
+  margin-top: 28px;
+  width: 130px;
+  height: 55px;
 }
 
 .navbar:hover .icon-name {
@@ -31,6 +34,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
   height: 80px;
   width: 80%;
   text-align: center;
@@ -40,9 +44,12 @@
 }
 
 .icon-container:hover {
+  margin-top: 10px;
   background-color: rgb(58, 57,  57);
   cursor: pointer;
   color: var(--main-color);
+  width: 130px;
+  height: 55px;
 }
 
 .icon-name {
