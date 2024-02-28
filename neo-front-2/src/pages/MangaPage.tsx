@@ -1,6 +1,8 @@
 import React from "react";
 import "../styles/mangaPage.css";
 import kagurabachi from "../assets/images/kagurabachi.jpg";
+import { Link } from "react-router-dom";
+import ReadPage from "./ReadPage";
 
 const Manga = () => {
   const chapters = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -18,7 +20,9 @@ const Manga = () => {
       </div>
       <div className="chapters-container">
         {chapters.map((c) => (
-          <div className="chap"> Chapter {c}</div>
+          <Link to="/read" style={{ textDecoration: "none", color: "inherit" }}>
+            <div className="chap"> Chapter {c}</div>
+          </Link>
         ))}
       </div>
     </>
