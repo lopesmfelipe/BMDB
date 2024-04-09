@@ -1,13 +1,13 @@
 import "../styles/mangaGrid.css"
 
-import berserkCover from "../assets/berserk.jpg";
-import onepunchmanCover from "../assets/onePunchMan.jpg";
-import monsterCover from "../assets/monster.jpg";
-import hunterxhunterCover from "../assets/hunterxHunter.jpg";
-import bluelockCover from "../assets/blueLock.jpg";
-import chainsawmanCover from "../assets/chainsawMan.jpg";
-import dandadan from "../assets/dandadan.jpg";
-import onepieceCover from "../assets/onePiece.jpg";
+import berserkCover from "../assets/images/berserk.jpg";
+import onepunchmanCover from "../assets/images/onePunchMan.jpg";
+import monsterCover from "../assets/images/monster.jpg";
+import hunterxhunterCover from "../assets/images/hunterxHunter.jpg";
+import bluelockCover from "../assets/images/blueLock.jpg";
+import chainsawmanCover from "../assets/images/chainsawMan.jpg";
+import dandadan from "../assets/images/dandadan.jpg";
+import onepieceCover from "../assets/images/onePiece.jpg";
 
 const listData = [
   { title: "Berserk", dateReleased: 1988, chapters: 375, cover: berserkCover },

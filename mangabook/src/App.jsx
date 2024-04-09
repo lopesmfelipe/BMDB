@@ -1,14 +1,15 @@
-import React from 'react';
 import MangaGrid from "./components/MangaGrid"
+import Star from "./components/Star"
+import "./styles/generals.css"
 
 function App() {
   return (
     <>
       <header>
-        <h3> HIPERCUBE</h3>
+        <h3> MANGABOOK</h3>
       </header>
       <main>
-        <MangaGrid />
+        <Star />
       </main>
     </>
   );
