@@ -1,15 +1,16 @@
+<<<<<<< HEAD
 import React from 'react';
 import MangaGrid from "./components/MangaGrid"
+=======
+import React from "react";
+import ContentGrid from "./components/ContentGrid.tsx";
+>>>>>>> 6ef452081a4e8cf24ecc12aec5e658def36c05d4
 
 function App() {
   return (
     <>
-      <header>
-        <h3> HIPERCUBE</h3>
-      </header>
-      <main>
-        <MangaGrid />
-      </main>
+      <div> Your Read List</div>
+      <ContentGrid />
     </>
   );
 }
